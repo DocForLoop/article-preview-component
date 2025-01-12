@@ -1,1 +1,30 @@
 @use './functions' as *;
+
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/manrope-v15-latin-500.woff2') format('woff2');
+}
+  
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/manrope-v15-latin-700.woff2') format('woff2');
+}
+
+:root {
+    --ff-primary: 'Manrope', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --fs-1: #{fluid(16, 20, 375, 1440, rem)};
+    --fs-2: #{rem(13)};
+    --fw-1: 500;
+    --fw-2: 700;
+    --lh-1: calc(24/16);
+    --lh-2: calc(20/13);
+    --ls-1: #{rem(0.2)};
+    --ls-2: #{rem(0.12)};
+    --ls-3: #{rem(5)};
+}
