@@ -13,9 +13,10 @@ main {
 
 .article {
     position: relative;
+    max-inline-size: rem(555);
     background-color: var(--clr-4);
     border-radius: rem(10);
-    box-shadow: 0 rem(40) rem(40) -rem(10) var(--clr-box-shadow);
+    box-shadow: 0 rem(40) rem(40) (rem(-10)) var(--clr-box-shadow);
     
     &__image {
         inline-size: 100%;

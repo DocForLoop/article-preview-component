@@ -1,1 +1,73 @@
 @use '@scss/global/functions' as *;
+
+@media (width > em(808)) {
+
+    main {
+        padding: 0;
+    }
+
+    .article {
+        flex-direction: row;
+        max-inline-size: rem(730);
+        max-block-size: rem(280);
+
+        &__image {
+            inline-size: rem(285);
+            block-size: rem(280);
+            background-position: left;
+            border-start-start-radius: rem(10);
+            border-end-start-radius: rem(10);
+            border-start-end-radius: 0;
+        }
+
+        &__text-wrapper {
+            padding-block-start: 32px;
+        }
+
+        &__title {
+            max-inline-size: 28ch;
+            letter-spacing: rem(0.25);
+        }
+
+        &__footer {
+            margin-block-start: 20px;
+            
+        }
+
+        &__share-info {
+            position: absolute;
+            border-radius: rem(10);
+            inset-block-end: rem(90);
+            inset-inline-end: fluid(-72, -68, 808, 1440);
+            margin: 0;
+            inline-size: rem(248);
+            block-size: rem(55);
+            padding-inline: 35px;
+            padding-block: 16px;
+            box-shadow: 0 rem(10) rem(10) 0 var(--clr-box-shadow);
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset-block-end: -(rem(32));
+                inset-inline-start: 50%;
+                transform: translateX(-50%) rotate(180deg);
+                border-width: rem(20);
+                border-style: solid;
+                border-color: transparent transparent var(--clr-1) transparent;
+            }
+        }
+
+        &__button--active {
+            display: none;
+        }
+
+        &__share-wrapper {
+            flex-wrap: nowrap;
+        }
+
+        &__share-links {
+            flex-wrap: nowrap;
+        }
+    }
+}
