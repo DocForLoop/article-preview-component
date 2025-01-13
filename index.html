@@ -38,7 +38,7 @@
               </div>
             </div>
             
-            <button class="article__button" aria-label="Share this article">
+            <button id="share-btn" class="article__button" aria-label="Share this article">
               <svg class="article__icon" aria-hidden="true" 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 15 13">
@@ -52,24 +52,35 @@
 
         </div>
 
-        <div class="article__share-info" role="region" aria-labelledby="share-label">
+        <div id="share-options" class="article__share-info" role="region" aria-labelledby="share-label">
+          <div class="article__share-wrapper">
+            <p class="article__share-label" id="share-label">Share</p>
 
-          <p class="article__share-label" id="share-label">Share</p>
-
-          <div class="article__share-links">
-            <a class="article__share-link article__share-link--facebook" 
-            href="https://facebook.com" aria-label="Share on Facebook">
-              <img src="src/assets/images/icon-facebook.svg" 
-              alt="" width="20" height="20"></a>
-            <a class="article__share-link article__share-link--twitter" 
-            href="https://twitter.com" aria-label="Share on Twitter">
-              <img src="src/assets/images/icon-twitter.svg" 
-              alt="" width="20" height="16"></a>
-            <a class="article__share-link article__share-link--pinterest" 
-            href="https://pinterest.com" aria-label="Share on Pinterest">
-              <img src="src/assets/images/icon-pinterest.svg" 
-              alt="" width="20" height="20"></a>
+            <div class="article__share-links">
+              <a class="article__share-link" 
+              href="https://facebook.com" aria-label="Share on Facebook">
+                <img src="src/assets/images/icon-facebook.svg" 
+                alt="" width="20" height="20"></a>
+              <a class="article__share-link" 
+              href="https://twitter.com" aria-label="Share on Twitter">
+                <img src="src/assets/images/icon-twitter.svg" 
+                alt="" width="20" height="16"></a>
+              <a class="article__share-link" 
+              href="https://pinterest.com" aria-label="Share on Pinterest">
+                <img src="src/assets/images/icon-pinterest.svg" 
+                alt="" width="20" height="20"></a>
+            </div>
           </div>
+
+          <button id="share-btn--active" class="article__button--active" aria-label="Back to this article">
+            <svg class="article__icon" aria-hidden="true" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 15 13">
+              <path fill="#FFF" 
+              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88
+              0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+            </svg>
+          </button>
         </div>
       </article>
     </main>

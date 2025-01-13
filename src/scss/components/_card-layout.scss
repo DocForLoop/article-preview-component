@@ -1,1 +1,73 @@
 @use '@scss/global/functions' as *;
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        gap: 10px;
+    }
+
+    &__author-info {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__author-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__button--active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__share-info {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+
+    &__share-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 21px;
+        row-gap: 10px;
+    }
+
+    &__share-links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}

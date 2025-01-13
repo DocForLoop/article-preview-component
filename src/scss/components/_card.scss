@@ -1,1 +1,163 @@
 @use '@scss/global/functions' as *;
+
+body {
+    min-height: 100vh;
+    background-color: var(--clr-5);
+}
+
+main {
+    padding-inline: 24px;
+    padding-block-start: 74px;
+    padding-block-end: 81px;
+}
+
+.article {
+    position: relative;
+    background-color: var(--clr-4);
+    border-radius: rem(10);
+    box-shadow: 0 rem(40) rem(40) -rem(10) var(--clr-box-shadow);
+    
+    &__image {
+        inline-size: 100%;
+        aspect-ratio: 327/200;
+        background: {
+            image: url('../assets/images/drawers.jpg');
+            repeat: no-repeat;
+            size: cover;
+            position: center;
+        }
+        border-start-start-radius: rem(10);
+        border-start-end-radius: rem(10);
+    }
+
+    &__text-wrapper {
+        padding-block-start: 36px;
+        padding-inline: fluid(32, 40, 375, 1440);
+    }
+
+    &__title {
+        max-inline-size: 57ch;
+    }
+
+    &__footer {
+        margin-block-start: 32px;
+        padding-inline: fluid(32, 40, 375, 1440);
+        padding-block-end: fluid(20, 32, 375, 1440);
+    }
+
+    &__author-image {
+        inline-size: rem(40);
+        block-size: rem(40);
+        border-radius: 50%;
+        aspect-ratio: 1;
+        background-image: url('../assets/images/avatar-michelle.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__author-name {
+        font-weight: var(--fw-2);
+        line-height: var(--lh-2);
+        letter-spacing: var(--ls-2);
+        color: var(--clr-1);
+    }
+
+    &__author-date {
+        color: var(--clr-3);
+    }
+
+    &__button {
+        flex-shrink: 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        inline-size: rem(32);
+        block-size: rem(32);
+        background-color: var(--clr-5);
+        transition: background-color 0.3s ease;
+
+        &:hover, &:focus {
+            background-color: var(--clr-2);
+            .article__icon path {
+                fill: var(--clr-4);
+                transition: fill 0.3s ease;
+            }
+        }
+
+        &:focus-visible {
+            outline: rem(3) solid var(--clr-outline);
+        }
+    }
+
+    &__button--active {
+        flex-shrink: 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        inline-size: rem(32);
+        block-size: rem(32);
+        background-color: var(--clr-2);
+        transition: background-color 0.3s ease;
+        
+        &:hover, &:focus {
+            background-color: var(--clr-4);
+            .article__icon path {
+                fill: var(--clr-2);
+                transition: fill 0.3s ease;
+            }
+        }
+        
+        &:focus-visible {
+            outline: rem(3) solid var(--clr-outline);
+        }
+    }
+    
+    &__icon {
+        inline-size: rem(15);
+        block-size: rem(13);
+    }
+
+    &__share-info {
+        margin-block-start: 20px;
+        padding-inline: fluid(32, 40, 375, 1440);
+        padding-block: 16px;
+        background-color: var(--clr-1);
+        border-end-start-radius: rem(10);
+        border-end-end-radius: rem(10);
+    }
+
+    &__share-label {
+        text-transform: uppercase;
+        letter-spacing: var(--ls-3);
+        color: var(--clr-3);
+    }
+
+    &__share-link {
+        transition: transform 0.3;
+        background-color: var(--clr-1);
+
+        & img {
+            inline-size: rem(20);
+            block-size: rem(20);
+        }
+
+        &:hover, &:focus {
+            transform: scale(1.25);
+        }
+
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-outline);
+        }
+    }
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+
