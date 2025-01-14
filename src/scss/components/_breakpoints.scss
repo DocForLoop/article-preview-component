@@ -49,12 +49,11 @@
             &::after {
                 content: '';
                 position: absolute;
-                inset-block-end: -(rem(32));
+                inset-block-end: rem(-32);
                 inset-inline-start: 50%;
-                transform: translateX(-50%) rotate(180deg);
-                border-width: rem(20);
-                border-style: solid;
-                border-color: transparent transparent var(--clr-1) transparent;
+                transform: translateX(-50%);
+                border: rem(20) solid transparent;
+                border-block-start-color: var(--clr-1);
             }
         }
 
