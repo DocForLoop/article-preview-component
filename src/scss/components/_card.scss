@@ -130,6 +130,8 @@ main {
 
     &__share-label {
         text-transform: uppercase;
+        font-size: var(--fs-2);
+        font-weight: var(--fw-1);
         letter-spacing: var(--ls-3);
         color: var(--clr-3);
     }
