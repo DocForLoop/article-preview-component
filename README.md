@@ -21,8 +21,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/solutions/)
-- [Live Site](https://docforloop.github.io/)
+- [Solution](https://www.frontendmentor.io/solutions/article-preview-component-with-flexbox-and-vite-74UIDffPBZ)
+- [Live Site](https://article-preview-component-mocha-three.vercel.app/)
 
 ## My process
 
