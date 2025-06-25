@@ -163,4 +163,28 @@ main {
     display: none;
 }
 
+.attribution {
+    position: absolute;
+    inset-block-end: 10px;
+    inset-inline: 0;
+    font-size: 12px;
+    text-align: center;
+    color: var(--clr-1);
+}
 
+.attribution__link {
+    border-radius: 3px;
+    color: var(--clr-1);
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus-visible {
+        color: var(--clr-outline);
+    }
+
+    &:focus-visible {
+        outline: 3px solid var(--clr-outline);
+        outline-offset: 2px;
+    }
+}
